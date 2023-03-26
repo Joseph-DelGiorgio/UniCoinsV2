@@ -1,0 +1,120 @@
+/* Home.css */
+:root {
+  --primary-color: #1c2237;
+  --secondary-color: #f39c12;
+  --light-color: #ffffff;
+  --tertiary-color: #3498db;
+  --success-color: #28a745;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  }
+  
+  .home-header {
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(
+  to right,
+  var(--tertiary-color),
+  var(--secondary-color),
+  var(--primary-color),
+  var(--success-color),
+  var(--info-color),
+  var(--warning-color),
+  var(--danger-color)
+  );
+  background-size: 500% 500%;
+  animation: rainbow 15s ease infinite;
+  }
+  
+  .display-4 {
+  margin-bottom: 1.5rem;
+  color: var(--light-color);
+  }
+  
+  .lead {
+  margin-bottom: 1.5rem;
+  color: var(--light-color);
+  }
+  
+  hr.my-4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  @keyframes rainbow {
+  0% {
+  background-position: 0% 50%;
+  }
+  50% {
+  background-position: 100% 50%;
+  }
+  100% {
+  background-position: 0% 50%;
+  }
+  }
+  
+  .features-section {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: var(--light-color);
+  }
+  
+  .feature {
+  padding: 1rem;
+  }
+  
+  .feature-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  }
+  
+  .getting-started-section,
+  .how-to-stake-section {
+  text-align: center;
+  padding: 3rem 0;
+  }
+  
+  .getting-started-section {
+  background-color: var(--tertiary-color);
+  color: var(--light-color);
+  }
+  
+  .how-to-stake-section {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  }
+  
+  .btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all 0.3s;
+  }
+  
+  .btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  }
+  
+  .connect-wallet-button {
+  background-color: var(--tertiary-color);
+  color: var(--light-color);
+  border-color: var(--tertiary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  }
+  
+  .connect-wallet-button:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  }
+
+

@@ -1,0 +1,29 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, var(--tertiary-color), var(--secondary-color), var(--primary-color), var(--success-color), var(--info-color), var(--warning-color), var(--danger-color));
+  background-size: 500% 500%;
+  animation: rainbow 15s ease infinite;
+}
+
+.container {
+  flex: 1;
+  background-color: var(--light-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(94, 32, 32, 0.1);
+}
+
+footer {
+  padding: 1rem;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+@keyframes rainbow {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+

@@ -1,0 +1,80 @@
+/* AppNavbar.css */
+
+:root {
+  --primary-color: #ff0000;
+  --secondary-color: #ffa500;
+  --tertiary-color: #ffff00;
+  --success-color: #00ff00;
+  --info-color: #0000ff;
+  --warning-color: #4b0082;
+  --danger-color: #9400d3;
+  --light-color: #ffffff;
+  --dark-color: #1c2237;
+}
+
+.app-navbar {
+  background-color: transparent !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.25rem 1rem; /* Reduce the padding of the navbar */
+}
+
+.app-navbar a.nav-link {
+  color: var(--light-color);
+  font-weight: 500;
+  font-size: 0.9rem; /* Decrease font size */
+  transition: all 0.3s;
+  padding: 0.5rem 0.75rem; /* Adjust padding */
+  border-radius: 5px;
+  background-color: transparent;
+  margin: 0 0.25rem; /* Adjust margin */
+}
+
+.app-navbar a.nav-link:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+  background-color: var(--light-color);
+}
+
+.app-navbar .navbar-toggler {
+  border-color: var(--light-color);
+}
+
+.app-navbar .navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.app-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' %3e%3cpath stroke='var(--light-color)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.app-navbar .navbar-text {
+  color: var(--light-color);
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem; /* Decrease font size */
+}
+
+.app-navbar .navbar-text:hover {
+  color: var(--secondary-color);
+}
+
+.app-navbar .navbar-text a {
+  color: var(--light-color);
+  text-decoration: underline;
+}
+
+.app-navbar .navbar-text a:hover {
+  color: var(--light-color);
+}
+
+.app-navbar .navbar-nav .active > a,
+.app-navbar .navbar-nav .active > a:hover,
+.app-navbar .navbar-nav .active > a:focus {
+  background-color: var(--secondary-color);
+}
+
+.app-navbar .navbar-nav .nav-link.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

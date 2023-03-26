@@ -1,0 +1,188 @@
+/* Colors */
+:root {
+    --primary-color: #ff0000;
+    --secondary-color: #ffa500;
+    --tertiary-color: #ffff00;
+    --success-color: #00ff00;
+    --info-color: #0000ff;
+    --warning-color: #4b0082;
+    --danger-color: #9400d3;
+    --light-color: #fff;
+    --dark-color: #333;
+    --error-color: #ff0000;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(
+      to right,
+      var(--primary-color),
+      var(--secondary-color),
+      var(--tertiary-color),
+      var(--success-color),
+      var(--info-color),
+      var(--warning-color),
+      var(--danger-color)
+    );
+    color: var(--light-color);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: var(--light-color);
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--light-color);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Badges */
+  .badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .badge-card {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .badge-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .badge-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .badge-name {
+    margin-top: 12px;
+    font-size: 18px;
+    color: var(--dark-color);
+  }
+  
+  .badge-description {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .badge-hours {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--dark-color);
+  }
+  
+  .badge-level {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--success-color);
+}
+/* ... existing CSS styles ... */
+
+/* ... existing CSS styles ... */
+
+/* Badges */
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.badge-card {
+  background-color: #f5f5f5; /* Changed to a light gray background */
+  border-radius: 12px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); /* Reduced the intensity of the shadow */
+  padding: 24px;
+  text-align: center;
+  width: 250px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.badge-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* Reduced the intensity of the shadow on hover */
+  transform: translateY(-5px);
+}
+
+.badge-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+}
+
+.badge-name {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+.badge-description {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.badge-hours {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+.badge-level {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--success-color);
+}
+
+
+  

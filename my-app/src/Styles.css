@@ -1,0 +1,99 @@
+/* Colors */
+:root {
+  --primary-color: #ff0000;
+  --secondary-color: #ffa500;
+  --tertiary-color: #ffff00;
+  --success-color: #00ff00;
+  --info-color: #0000ff;
+  --warning-color: #4b0082;
+  --danger-color: #9400d3;
+  --light-color: #fff;
+  --dark-color: #333;
+  --error-color: #ff0000;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--tertiary-color),
+    var(--success-color),
+    var(--info-color),
+    var(--warning-color),
+    var(--danger-color)
+  );
+  color: var(--light-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: var(--light-color);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--light-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover,
+button:focus,
+button:active {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+button.btn-success {
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+}
+
+button.btn-success:hover,
+button.btn-success:focus,
+button.btn-success:active {
+  background-color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
+}
+
+button.btn-danger {
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+button.btn-danger:hover,
+button.btn-danger:focus,
+button.btn-danger:active {
+  background-color: var(--warning-color);
+  border-color: var(--warning-color);
+}
